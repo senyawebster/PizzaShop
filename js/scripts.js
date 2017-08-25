@@ -12,6 +12,8 @@ Pizza.prototype.cost = function() {
     this.price = 15;
   } else if (this.size === "large") {
     this.price = 20;
+  } else {
+    alert("you need to pick a pizza size!")
   }
 
   if (this.toppings.length === 0) {
@@ -36,14 +38,6 @@ Pizza.prototype.cost = function() {
 
 var pizzaPrice = 0;
 
-// function resetFields() {
-//   $("input[type=radio]:checked").each(function() {
-//     this.checked = false;
-//   });
-//   $("input[type=checkbox]:checked").each(function() {
-//     this.checked = false;
-//   });
-// }
 
 //Frontend Logic
 $(document).ready(function(){
