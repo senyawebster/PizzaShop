@@ -13,7 +13,6 @@ Pizza.prototype.cost = function() {
   } else if (this.size === "large") {
     this.price = 20;
   }
-  console.log(this.price);
 
   if (this.toppings.length === 0) {
     var finalPrice = this.price;
@@ -37,9 +36,14 @@ Pizza.prototype.cost = function() {
 
 var pizzaPrice = 0;
 
-function resetFields() {
-
-}
+// function resetFields() {
+//   $("input[type=radio]:checked").each(function() {
+//     this.checked = false;
+//   });
+//   $("input[type=checkbox]:checked").each(function() {
+//     this.checked = false;
+//   });
+// }
 
 //Frontend Logic
 $(document).ready(function(){
@@ -55,7 +59,8 @@ $(document).ready(function(){
     alert("Your delicious pizza will cost: $" + pizza.cost());
 
     setTimeout(function () {
-      resetFields();
-    }, 10);
+      $('input[type=radio]').prop('checked', false);
+      $('input[type=checkbox]').prop('checked', false);
+    }, 500);
   });
 });
