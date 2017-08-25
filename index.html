@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Pizza Shop</title>
   </head>
   <body>
+    <div class="container">
+      <br>
+      <br>
+      <div class="jumbotron">
+        <h1>Welcome to the Pizza Shop</h1>
+        <h4>Use the options below to price a pizza of your making!</h4>
+      </div>
 
+      <div class="well">
+        <form class="pizzaForm">
+          <div class="form-group">
+            <h3>Please pick your preferred size</h3>
+            <p>The following prices are base pricing for each pizza, each additional topping will add to the cost as listed</p>
+            <input type="checkbox" name="pizza-size" value="small">Small &#8212 $10 <br>
+            <input type="checkbox" name="pizza-size" value="medium">Medium &#8212 $15 <br>
+            <input type="checkbox" name="pizza-size" value="large">Large &#8212 $20 <br>
+          </div>
+          <div class="form-group">
+            <h3>Please pick your preferred toppings</h3>
+            <input type="checkbox" name="pizza-toppings" value="tomato sauce">Tomato Sauce &#8212 $1
+            <br>
+            <input type="checkbox" name="pizza-toppings" value="cheese">Cheese &#8212 $1
+            <br>
+            <input type="checkbox" name="pizza-toppings" value="pepperoni">Pepperoni &#8212 $1
+            <br>
+            <input type="checkbox" name="pizza-toppings" value="mushrooms">Mushrooms &#8212 $1
+            <br>
+            <input type="checkbox" name="pizza-toppings" value="olives">Olives &#8212 $1
+            <br>
+            <input type="checkbox" name="pizza-toppings" value="peppers">Peppers &#8212 $1
+            <br>
+            <input type="checkbox" name="pizza-toppings" value="sausage">Sausage &#8212 $1
+          </div>
+        </form>
+      </div>
+
+    </div>
   </body>
 </html>
